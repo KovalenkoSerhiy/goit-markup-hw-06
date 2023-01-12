@@ -30,9 +30,7 @@
               <a class="nav-link link current" href="./index.html">Studio</a>
             </li>
             <li>
-              <a class="nav-link link" href="./portfolio.html"
-                >Portfolio</a
-              >
+              <a class="nav-link link" href="./portfolio.html">Portfolio</a>
             </li>
             <li><a class="nav-link link" href="">Contacts</a></li>
           </ul>
@@ -57,7 +55,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-btm btm" type="button" data-modal-open>Order Service</button>
+          <button class="hero-btm btm" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <section class="benefits">
@@ -426,6 +426,72 @@
             <use href="./img/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <form class="registration-form" name="registration_form">
+          <strong class="registration-form-appeal"
+            >Leave your contacts and we will call you back</strong
+          >
+          <div class="registration-form-group" role="group" iria-labelledby="">
+            <label class="registration-form-field">
+              <span class="registration-form-label">Name</span>
+              <input
+                class="registration-form-input"
+                type="text"
+                name="user_name"
+                required
+                minlength="3"                
+              />
+              <svg class="registration-form-icon" width="18px" height="24px">
+                <use href="./img/icons.svg#icon-person"></use>
+              </svg>
+            </label>
+            <label class="registration-form-field">
+              <span class="registration-form-label">Phone</span>
+              <input
+                class="registration-form-input"
+                type="phone"
+                name="user_phone"
+              />
+              <svg class="registration-form-icon" width="18px" height="24px">
+                <use href="./img/icons.svg#icon-phone"></use>
+              </svg>
+            </label>
+            <label class="registration-form-field">
+              <span class="registration-form-label">Email</span>
+              <input
+                class="registration-form-input"
+                type="email"
+                name="user-email"
+              />
+              <svg class="registration-form-icon" width="18px" height="24px">
+                <use href="./img/icons.svg#icon-email"></use>
+              </svg>
+            </label>
+            <label>
+              <span class="registration-form-label">Comment</span>
+              <textarea
+                class="registration-form-massege"
+                name="user-massege"
+                rows="7"
+                placeholder="Text input"
+              ></textarea>
+            </label>
+          </div>
+          <label class="registration-form-agreement">
+            <input
+              class="registration-form-checkbox"
+              type="checkbox"
+              name=""
+              id=""
+            />
+            <span class="registration-form-text"
+              >I accept the terms and conditions of the
+              <a class="registration-form-link link" href=""
+                >Privacy Policy</a
+              ></span
+            >
+          </label>
+          <button type="submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
