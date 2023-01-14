@@ -450,6 +450,8 @@
                 class="registration-form-input"
                 type="phone"
                 name="user_phone"
+                required
+                minlength="3"  
               />
               <svg class="registration-form-icon" width="18px" height="24px">
                 <use href="./img/icons.svg#icon-phone"></use>
@@ -461,6 +463,8 @@
                 class="registration-form-input"
                 type="email"
                 name="user-email"
+                required
+                minlength="3"  
               />
               <svg class="registration-form-icon" width="18px" height="24px">
                 <use href="./img/icons.svg#icon-email"></use>
@@ -480,17 +484,20 @@
             <input
               class="registration-form-checkbox"
               type="checkbox"
-              name=""
-              id=""
+              name="user_agreemer"
             />
+            <svg class="registration-form-check" width="16" height="16">
+              <use class="check" href="./img/icons.svg#icon-checkbox-checked"></use>
+              <use class="uncheck" href="./img/icons.svg#icon-checkbox-unchecked"></use>
+            </svg>
             <span class="registration-form-text"
               >I accept the terms and conditions of the
-              <a class="registration-form-link link" href=""
+              <a class="registration-form-link" href=""
                 >Privacy Policy</a
               ></span
             >
           </label>
-          <button type="submit">Send</button>
+          <button class="btm sub-btm" type="submit">Send</button>
         </form>
       </div>
     </div>
