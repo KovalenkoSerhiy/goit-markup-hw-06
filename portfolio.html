@@ -329,25 +329,23 @@
             </li>
           </ul>
         </div>
-        <div class="footer-form">
-          <form class="subscribe-form" name="subscribe_form">
-            <label class="subscribe-form-field">
-              <span class="subscribe-form-label">Subscribe</span>
-              <input
-                class="subscribe-form-input"
-                type="email"
-                name="email"
-                required
-                minlength="3"
-                placeholder="E-mail"                
-              />
-              <svg class="subscribe-form-icon" width="18px" height="24px">
-                <use href=""></use>
+        <form class="footer-form">
+          <label for="subscribe-form-input" class="subscribe-label">Subscribe</label>
+            <div class="subscribe-form">
+              <input class="subscribe-input"
+              id="subscribe-form-input"
+              type="email"
+              placeholder="E-mail"
+              name="subscribe"
+              required/>
+              <button class="subscribe-btm btm" type="submit">
+              Subscribe
+              <svg class="subscribe-icon" width="24px" height="24px">
+                <use href="./img/icons.svg#icon-Frame-3"></use>
               </svg>
-            </label>
-            <button class="subscribe-btm btm" type="submit">Submit</button>
-          </form>
-        </div>
+            </button>
+            </div>          
+        </form>
       </div>
     </footer>
   </body>
